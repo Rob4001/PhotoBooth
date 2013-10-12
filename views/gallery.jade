@@ -1,0 +1,12 @@
+extends layout
+
+block content
+
+  link(rel='stylesheet', href='/stylesheets/gallery.css')
+  h1= title
+  p Welcome to #{title}
+  
+  div#photos
+    each file in f
+      img(src='#{file}')
+      

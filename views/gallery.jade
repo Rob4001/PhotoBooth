@@ -6,6 +6,9 @@ block content
   h1= title
   p Welcome to #{title}
   
+  a(href='upload')
+    button(type='button') Upload your own :)
+  
   div#photos
     each file in f
       img(src='#{file}')
